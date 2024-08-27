@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: rgb(243, 243, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sideblock{
+    min-height: 300vh;
+    width: 20%;
+    background-color: rgb(36, 102, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+
+.button{
+    height: 50px;
+    width: 100%;
+}
+
+.button a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 45px;
+    line-height: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+.button a:hover {
+    background-color: rgb(58, 122, 241);
+}
+
+.client_base_block{
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+}
+
+.new_request_identify{
+    height: 600px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px grey;
+    display: flex;
+    flex-direction: column
+}
+
+.new_request_identify .header{
+    height: 60px;
+    width: 100%;
+    border-bottom: 3px solid rgb(204, 204, 204);
+}
+
+.new_request_identify .header h3{
+    margin-left: 20px;
+}
+
+.identify_table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.identify_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.identify_table table th,
+.identify_table table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.identify_table table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.identify_table table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.identify_table table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.identify_table table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.identify_table table input[type="submit"] {
+    height: 35px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.identify_table table input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.check_identify{
+    height: 500px;
+    width: 80%;
+    margin: 125px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px grey;
+}
+
+.check_identify table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.check_identify table th,
+.check_identify table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.check_identify table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.check_identify table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.check_identify table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.check_identify table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.check_identify div input{
+    margin: 25px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.check_identify div input[type="submit"]:hover {
+    background-color: #45a049;
+}

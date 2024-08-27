@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Клиентская База{% endblock %}
+
+{% block content %}
+<div class="client_base_block">
+    <div class="new_request_identify">
+        <div class="header">
+            <h3>Запросы на идентификацию пользователей</h3>
+        </div>
+        <div class="identify_table">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Отчество</th>
+                    <th>День Рождения</th>
+                    <th>Действие</th>
+                </tr>
+                <tbody id="users">
+                    <!-- Add Users Info Here from NotIdentifyUser.js 10.251.4.131 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="check_identify" id="check">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Отчество</th>
+                <th>День Рождения</th>
+                <th>Электронная Почта</th>
+                <th>Номер Телефона</th>
+                <th>Паспортные данные</th>
+            </tr>
+            <tbody id="user_check">
+                <!-- Get ALL users information -->
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+<script src="{{ url_for('static', path='js/NotIdentifyUser.js')}}"></script>
+{% endblock %}
