@@ -9,9 +9,9 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from typing import Annotated
 
 app = FastAPI(
-    root_path='/admin_panel/'
+    root_path='/admin_panel'
 ) 
-app.mount('/static', StaticFiles(directory='static'), name = 'static')
+app.mount('/static', StaticFiles(directory='admin_panel/static'), name = 'static')
 templates = Jinja2Templates(directory='templates')
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='auth/token')
