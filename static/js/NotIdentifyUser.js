@@ -1,10 +1,10 @@
     document.addEventListener('DOMContentLoaded', () => {
         const token = get_cookie('token');
-        // if(!token) {
-        //     window.location.href = 'http://10.251.4.131/';
-        //     return;
-        // }
-
+        if(!token) {
+            window.location.href = 'http://10.251.4.131/';
+            return;
+        }
+        
         fetch('http://10.251.4.131/api/telecom_app/admin/get_not_identify_users', {
             method: 'GET',
             headers: {
@@ -73,7 +73,7 @@
                 button.addEventListener('click', (event) => {
                     const userIndex = event.target.dataset.index;
 
-                    document.getElementById('check').scrollIntoView({
+                    document.getElementById('check_identify').scrollIntoView({
                         behavior: 'smooth'
                     });
 
@@ -121,6 +121,7 @@
                     row.appendChild(phone_number);
 
                     var check = document.getElementById('check');
+                    check.innerHTML = "";
 
                     const photoPaths = selectedUser['user_info']['idPhotoPath'].split(';');
                     
