@@ -16,9 +16,9 @@ templates = Jinja2Templates(directory='templates')
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl='auth/token')
 
-@app.exception_handler(404)
-async def not_found_handler(request: Request, exc: Exception):
-    return RedirectResponse(url='/admin_panel')
+# @app.exception_handler(404)
+# async def not_found_handler(request: Request, exc: Exception):
+#     return RedirectResponse(url='/admin_panel')
 
 @app.get('/')
 def admin_panel(request: Request):
