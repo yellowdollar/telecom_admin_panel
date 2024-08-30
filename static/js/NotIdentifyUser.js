@@ -1,9 +1,9 @@
     document.addEventListener('DOMContentLoaded', () => {
         const token = get_cookie('token');
-        if(!token) {
-            window.location.href = 'http://10.251.4.131/';
-            return;
-        }
+        // if(!token) {
+        //     window.location.href = 'http://10.251.4.131/';
+        //     return;
+        // }
         
         fetch('http://10.251.4.131/api/telecom_app/admin/get_not_identify_users', {
             method: 'GET',
